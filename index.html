@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAPA TRANSPORTES - Transporte e Resgate de Motos | Zona Norte SP</title>
+    <meta name="description" content="Transporte e Resgate de Motos na Zona Norte de São Paulo. Pequenos fretes, retiradas e entregas para SP, Interior e Litoral.">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/5511966069730?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." class="whatsapp-float" target="_blank" title="Falar no WhatsApp" aria-label="Contato via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo-container">
+            <img src="./Imagem/logo-japa.png" alt="Japa Transportes Moto" class="logo-img">
+            <div class="logo">JAPA <span>TRANSPORTES</span></div>
+        </div>
+
+        <div class="header-contact-group">
+      <span class="location-tag">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        Zona Norte - SP
+      </span>
+
+        <a href="https://wa.me/5511966069730" class="btn-header" target="_blank">
+            <i class="fab fa-whatsapp"></i> (11) 96606-9730
+        </a>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        
+        <h1>RESGATE E TRANSPORTE DE MOTOS</h1>
+        
+        <p class="sub-services">Pequenos Carretos • Retiradas e Entregas • Pick-up • Carro Particular • Motoboy</p>
+        
+        <p class="location-text">Atendemos São Paulo, Interior e Litoral</p>
+
+        <a href="https://wa.me/5511966069730?text=Ol%C3%A1!%20Preciso%20de%20um%20or%C3%A7amento%20para%20transporte." class="btn-main" target="_blank">
+            <i class="fab fa-whatsapp"></i> Pedir Orçamento no WhatsApp
+        </a>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="services-section">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <div class="section-line"></div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h3><i class="fas fa-motorcycle"></i> Resgate e Transporte de Motos</h3>
+                <div class="card-img-container">
+                    <img src="./Imagem/moto-resgate.jpeg" alt="Resgate e Transporte de Motos">
+                </div>
+            </div>
+
+            <div class="service-card">
+                <h3><i class="fas fa-box"></i> Pequenos Fretes e Mudanças</h3>
+                <div class="card-img-container">
+                    <img src="./Imagem/frete-mudanca.jpeg" alt="Pequenos Fretes e Mudanças">
+                </div>
+            </div>
+
+            <div class="service-card">
+                <h3><i class="fas fa-truck-ramps"></i> Retiradas e Entregas</h3>
+                <div class="card-img-container">
+                    <img src="./Imagem/Retirada e Entrega..jpg" alt="Retiradas e Entregas">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="how-it-works">
+        <h2 class="section-title">Como Funciona</h2>
+        <div class="section-line"></div>
+        <p class="subtitle-text">Contratar seu frete é simples e leva menos de 2 minutos</p>
+
+        <div class="steps-grid">
+            <div class="step-item">
+                <div class="number">01</div>
+                <h4>Conte o que precisa</h4>
+                <p>Envie mensagem no WhatsApp dizendo o que vai transportar (moto, móvel, caixa, etc).</p>
+            </div>
+
+            <div class="step-item">
+                <div class="number">02</div>
+                <h4>Envie a rota</h4>
+                <p>Informe o bairro/cidade de retirada (origem) e o local de entrega (destino).</p>
+            </div>
+
+            <div class="step-item">
+                <div class="number">03</div>
+                <h4>Combine os detalhes</h4>
+                <p>Receba o valor exato e agende o horário do seu transporte!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIMULADOR DE ORÇAMENTO -->
+    <section class="quote-section">
+        <div class="quote-card">
+            <h2>SIMULAR ORÇAMENTO</h2>
+            <div class="section-line"></div>
+            <p>Preencha abaixo para enviar direto para nosso WhatsApp</p>
+
+            <form id="quoteForm" onsubmit="enviarWhatsApp(event)">
+                <div class="form-group">
+                    <label for="origem">Local de Retirada (Origem):</label>
+                    <input type="text" id="origem" placeholder="Ex: Santana - Zona Norte SP" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="destino">Local de Entrega (Destino):</label>
+                    <input type="text" id="destino" placeholder="Ex: Santos - SP" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="item">O que precisa transportar?</label>
+                    <select id="item">
+                        <option value="Moto (Transporte/Resgate)">Moto (Transporte/Resgate)</option>
+                        <option value="Pequenos Fretes / Móveis">Pequenos Fretes / Móveis</option>
+                        <option value="Retiradas e Entregas">Retiradas e Entregas</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-main btn-submit">
+                    <i class="fab fa-whatsapp"></i> Gerar Orçamento no WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">
+            <img src="/Imagem/logo-japa.png" alt="Japa Transportes Moto" class="logo-img-footer">
+            <span>JAPA <span style="color: var(--primary-red);">TRANSPORTES</span></span>
+        </div>
+        <p>Base e Foco de Atuação na Zona Norte de São Paulo • Atendemos Capital, Interior e Litoral</p>
+        <p>Resgate e Transporte de Motos • Pequenos Fretes • Pick-up • Motoboy</p>
+        <p><i class="fab fa-whatsapp"></i> WhatsApp: (11) 96606-9730</p>
+        <p class="copyright">&copy; 2026 Japa Transportes. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- SCRIPT DE ENVIO DO FORMULÁRIO PARA O WHATSAPP -->
+    <script>
+        function enviarWhatsApp(event) {
+            event.preventDefault();
+            
+            const telefone = "5511966069730";
+            const origem = document.getElementById('origem').value;
+            const destino = document.getElementById('destino').value;
+            const item = document.getElementById('item').value;
+
+            const mensagem = `Olá, gostaria de solicitar um orçamento:%0A%0A` +
+                             `*Origem:* ${encodeURIComponent(origem)}%0A` +
+                             `*Destino:* ${encodeURIComponent(destino)}%0A` +
+                             `*Serviço:* ${encodeURIComponent(item)}`;
+
+            window.open(`https://wa.me/${telefone}?text=${mensagem}`, '_blank');
+        }
+    </script>
+</body>
+</html>
